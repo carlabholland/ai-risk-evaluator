@@ -1,0 +1,14 @@
+[package]
+name = "ai-risk-evaluator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["json"] }
+tokio = { version = "1.28", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+anyhow = "1.0"
+dotenv = "0.15"
+tower-http = { version = "0.6", features = ["cors"] }
